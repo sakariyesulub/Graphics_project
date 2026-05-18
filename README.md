@@ -1,4 +1,4 @@
-[18/05/2026 01:00] W✨ G:  #include <GL/glut.h>
+ #include <GL/glut.h>
 #include <windows.h>
 #include <math.h>
 
@@ -105,7 +105,7 @@ void drawCelestialBody(float cx, float cy, float r, int segments, bool isSun) {
 // ============================================================================
 // COLLABORATOR 3 — Stars and Night Effects
 // ============================================================================
-[18/05/2026 01:00] W✨ G: 
+
 
 void renderNightEffects() {
     if (!isNight) return;
@@ -217,7 +217,7 @@ void handleKeypress(unsigned char key, int x, int y) {
         // PAUSE & RESUME KEY ASSIGNMENTS
         case 'p': isAnimated = false; break; // Pause all updates
         case 'c': isAnimated = true;  break; // Resume animations
-[18/05/2026 01:00] W✨ G: 
+
 
         case 'w': logoY += 10.0f; break;
         case 's': logoY -= 10.0f; break;
@@ -323,7 +323,7 @@ void display() {
                 glVertex2f(65.0f, 640.0f); glVertex2f(62.0f, 640.0f);
                 glVertex2f(60.0f, 220.0f); glVertex2f(65.0f, 220.0f);
             glEnd();
-[18/05/2026 01:00] W✨ G: 
+
 
             glColor3f(0.2, 0.2, 0.2);
             glBegin(GL_LINE_LOOP);
@@ -414,7 +414,7 @@ void update() {
 
     glutPostRedisplay();
 }
-[18/05/2026 01:00] W✨ G: 
+
 
 int main(int argc, char** argv) {
     glutInit(&argc, argv);
